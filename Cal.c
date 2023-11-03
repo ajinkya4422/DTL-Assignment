@@ -27,6 +27,10 @@ int main() {
                 printf("Error: Division by zero is not allowed.\n");
             }
             break;
+        case '^':
+            result = pow(num1, num2);
+            printf("%.2lf ^ %.2lf = %.2lf\n", num1, num2, result);
+            break;
         default:
             printf("Error: Invalid operator.\n");
     }
